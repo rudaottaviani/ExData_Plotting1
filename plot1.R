@@ -7,7 +7,7 @@ data <- read.table("household_power_consumption.txt",
                    na.strings="?") %>%
         filter(grepl("(^1/2/2007$|^2/2/2007$)", Date)) %>%
         mutate(TimeStamp=as.POSIXct(
-                strptime(paste(Date, " ", Time), "%m/%d/%Y %H:%M:%S"))) %>%
+                strptime(paste(Date, " ", Time), "%d/%m/%Y %H:%M:%S"))) %>%
         select(-Date, -Time) %>%
         arrange(TimeStamp) 
 
