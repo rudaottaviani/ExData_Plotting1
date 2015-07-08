@@ -13,6 +13,8 @@ data <- read.table("household_power_consumption.txt",
 
 png(filename="plot2.png", width=480, height=480)
 
+par(bg=NA)
+
 plot(data$TimeStamp, 
      data$Global_active_power,  
      type="l", 

@@ -13,6 +13,7 @@ data <- read.table("household_power_consumption.txt",
 
 png(filename="plot4.png", width=480, height=480)
 
+par(bg=NA)
 par(mfrow=c(2,2))
 
 #first panel

@@ -13,6 +13,8 @@ data <- read.table("household_power_consumption.txt",
 
 png(filename="plot1.png", width=480, height=480)
 
+par(bg=NA)
+
 hist(data$Global_active_power,
      xlab="Global Active Power (Kilowatts)",
      main="Global Active Power",
