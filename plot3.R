@@ -19,7 +19,7 @@ plot(data$TimeStamp,
      data$Sub_metering_1,  
      type="l", 
      xlab="", 
-     ylab="Energy Sub Metering")
+     ylab="Energy sub metering")
 
 lines(data$TimeStamp, 
      data$Sub_metering_2,  
